@@ -1,18 +1,21 @@
 <template>
-    <div>
-        <h1>Counter ag </h1>
-        <!-- {{timer}} -->
-        <!-- <h1> {{time}} </h1> -->
-        <h1>{{days}} </h1>
-        <h1>{{hours}} </h1>
-        <h1>{{minutes}} </h1>
-        <h1>{{seconds}} </h1>
+    <div class="counter">
+        <!-- <p>{{TimeCard}} </p> -->
+        <TimeCard name="Days" :time="days"/>
+        <TimeCard name="Hours" :time="hours"/>
+        <TimeCard name="Minutes" :time="minutes"/>
+        <TimeCard name="Seconds" :time="seconds"/>
+        <!-- <TimeCard name="Seconds" :time="seconds"/> -->
     </div>
 </template>
 
 <script>
+import TimeCard from "./TimeCard";
 export default {
     name: "Counter",
+    components:{
+        TimeCard
+    },
 
     props: {
         // headingText: String
@@ -48,3 +51,12 @@ export default {
    
 }
 </script>
+
+<style scoped>
+.counter{
+    display:flex;
+    justify-content:space-between;
+    width: 40vw;
+    margin: 15vh auto;
+}
+</style>

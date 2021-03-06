@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <Heading/>
+    <div class="top">
+        <Heading headingText="WE'RE LAUNCHING SOON"/>
         <Counter/>
 
     </div>
