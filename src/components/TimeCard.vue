@@ -28,5 +28,17 @@ export default {
     padding:20px 10px;
     border-radius: 4%;
 }
+@media only screen and (max-width: 800px) {
+    .display-card{
+        width: fit-content;
+        padding: 10px 15px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .card-name{
+        font-size: 12px;
+        text-align: left;
+    }
+}
 
 </style>

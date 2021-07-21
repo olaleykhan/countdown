@@ -59,4 +59,11 @@ export default {
     width: 40vw;
     margin: 15vh auto;
 }
+
+@media only screen and (max-width: 800px) {
+    .counter{
+        width: 90vw;
+        max-width: 100%;
+    }
+}
 </style>
